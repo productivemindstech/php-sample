@@ -4,7 +4,7 @@ require_once 'vendor/autoload.php';
 define('SAUCE_HOST','pubinator:580f062b-af5a-4982-85dc-4619f66a2987@ondemand.saucelabs.com');
 
 class WebTest extends PHPUnit_Extensions_Selenium2TestCase {
-    protected $start_url = 'http://saucelabs.com/test/guinea-pig';
+    protected $start_url = 'html/hello.php';
 
     public static $browsers = array(
         array(
