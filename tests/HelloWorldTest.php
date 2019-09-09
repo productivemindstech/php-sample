@@ -12,11 +12,12 @@ class WebTest extends PHPUnit_Extensions_Selenium2TestCase {
             'host' => SAUCE_HOST,
             'port' => 80,
             'desiredCapabilities' => array(
-                'version' => '15',
-                'platform'=> 'Windows 2012'
+                'version' => '69.0',
+                'platform'=> 'Windows 10'
             )
         )
     );
+
 
     protected function setUp()
     {
