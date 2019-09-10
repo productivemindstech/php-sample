@@ -1,7 +1,7 @@
 language: php
 php: 7.2
 before_script:
-  - ./before_script.sh
+  - bash before_script.sh
   - composer install
 addons:
   sauce_connect:
