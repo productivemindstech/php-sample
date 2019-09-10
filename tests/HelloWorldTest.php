@@ -29,7 +29,7 @@ class WebTest extends PHPUnit_Extensions_Selenium2TestCase {
     {
 		$html_path = getcwd();
 		$start_url = 'file:///'.$html_path.'hello.html';
-        $this->url($this->start_url);
+        $this->url($start_url);
 		$currentURL = $this->url();
 		echo $currentURL;
         $this->assertContains("PHP Hello World Test", $this->title());
