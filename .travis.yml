@@ -4,5 +4,5 @@ before_script:
   - composer install
 addons:
   sauce_connect:
-    username: "pubinator"
-    access_key: "580f062b-af5a-4982-85dc-4619f66a2987"
+    username: "sendemail2surya"
+    access_key: "5f12446c-8011-412a-9785-59ea40fbb35b"
