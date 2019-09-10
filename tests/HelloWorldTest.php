@@ -29,7 +29,7 @@ class WebTest extends PHPUnit_Extensions_Selenium2TestCase {
 
     public function testTitle()
     {
-		$start_url = 'hello.html';
+		$start_url = 'https://saucelabs.com/test/guinea-pig';
 		try {
         $this->url($start_url);
 		}catch(Exception $e) {
