@@ -8,7 +8,7 @@
  
   $web_driver = RemoteWebDriver::create(
     "https://pubinator:580f062b-af5a-4982-85dc-4619f66a2987@ondemand.saucelabs.com:443/wd/hub",
-    array("platform"=>"Windows 7", "browserName"=>"chrome", "version"=>"40")
+    array("platform"=>"Windows 7", "browserName"=>"chrome", "version"=>"60")
   );
   $web_driver->get("https://saucelabs.com/test/guinea-pig");
  
