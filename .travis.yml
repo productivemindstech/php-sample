@@ -3,7 +3,6 @@ php: 7.2
 before_script:
   - composer install
   - ./before_script.sh
-	
 addons:
   sauce_connect:
     username: "pubinator"
