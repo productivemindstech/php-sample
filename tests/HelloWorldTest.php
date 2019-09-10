@@ -4,8 +4,8 @@ require_once 'vendor/autoload.php';
 define('SAUCE_HOST','pubinator:580f062b-af5a-4982-85dc-4619f66a2987@ondemand.saucelabs.com');
 
 class WebTest extends PHPUnit_Extensions_Selenium2TestCase {
-	protected $html_path = realpath("hello.html");
-    protected $start_url = 'file:///'.$html_path;
+	
+    protected $start_url = '';
 
     public static $browsers = array(
         array(
@@ -27,9 +27,11 @@ class WebTest extends PHPUnit_Extensions_Selenium2TestCase {
 
     public function testTitle()
     {
-		echo $this->start_url;
+		$html_path = getcwd();
+		$start_url = 'file:///'.$html_path.'hello.html';
         $this->url($this->start_url);
         $this->assertContains("PHP Hello World Test", $this->title());
+		
     }
 }
 ?>
