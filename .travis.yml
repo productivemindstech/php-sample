@@ -1,8 +1,8 @@
 language: php
 php: 7.2
 before_script:
-  - composer install
   - ./before_script.sh
+  - composer install
 addons:
   sauce_connect:
     username: "pubinator"
