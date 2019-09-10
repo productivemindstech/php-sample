@@ -4,7 +4,7 @@ require_once 'vendor/autoload.php';
 define('SAUCE_HOST','pubinator:580f062b-af5a-4982-85dc-4619f66a2987@ondemand.saucelabs.com');
 
 class WebTest extends PHPUnit_Extensions_Selenium2TestCase {
-	protected html_path = realpath("hello.html");
+	protected $html_path = realpath("hello.html");
     protected $start_url = 'file:///'.$html_path;
 
     public static $browsers = array(
