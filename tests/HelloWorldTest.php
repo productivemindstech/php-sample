@@ -22,13 +22,14 @@ class WebTest extends PHPUnit_Extensions_Selenium2TestCase {
 
     protected function setUp()
     {
-        $this->setBrowserUrl('http://localhost');
+		$html_path = getcwd().'/';
+		$base_url = 'file:///'.$html_path;
+        $this->setBrowserUrl($base_url);
     }
 
     public function testTitle()
     {
-		$html_path = getcwd();
-		$start_url = 'file:///'.$html_path.'hello.html';
+		$start_url = 'hello.html';
         $this->url($start_url);
 		$currentURL = $this->url();
 		echo $currentURL;
