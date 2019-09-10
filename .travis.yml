@@ -2,7 +2,12 @@ language: php
 php: 7.2
 before_script:
   - composer install
+  
+script:
+  cd tests
+  python -m SimpleHTTPServer 8080 > /dev/null 2>&1 &
+	
 addons:
   sauce_connect:
-    username: "sendemail2surya"
-    access_key: "5f12446c-8011-412a-9785-59ea40fbb35b"
+    username: "pubinator"
+    access_key: "580f062b-af5a-4982-85dc-4619f66a2987"

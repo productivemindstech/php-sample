@@ -1,7 +1,7 @@
 <?php
 
 require_once 'vendor/autoload.php';
-define('SAUCE_HOST','sendemail2surya:5f12446c-8011-412a-9785-59ea40fbb35b@ondemand.saucelabs.com');
+define('SAUCE_HOST','pubinator:580f062b-af5a-4982-85dc-4619f66a2987@ondemand.saucelabs.com');
 
 class WebTest extends PHPUnit_Extensions_Selenium2TestCase {
 	
@@ -24,12 +24,12 @@ class WebTest extends PHPUnit_Extensions_Selenium2TestCase {
     {
 		$html_path = getcwd().'/';
 		$base_url = 'file:///'.$html_path;
-        $this->setBrowserUrl($base_url);
+        $this->setBrowserUrl('http://localhost:8080/');
     }
 
     public function testTitle()
     {
-		$start_url = 'https://saucelabs.com/test/guinea-pig';
+		$start_url = 'hello.html';
 		try {
         $this->url($start_url);
 		}catch(Exception $e) {
