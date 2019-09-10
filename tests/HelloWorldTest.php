@@ -1,13 +1,13 @@
 <?php
 
 require_once 'vendor/autoload.php';
-define('SAUCE_HOST','pubinator:580f062b-af5a-4982-85dc-4619f66a2987@ondemand.saucelabs.com');
+/*define('SAUCE_HOST','pubinator:580f062b-af5a-4982-85dc-4619f66a2987@ondemand.saucelabs.com');*/
 
 class WebTest extends PHPUnit_Extensions_Selenium2TestCase {
 	
     protected $start_url = '';
 
-    public static $browsers = array(
+   /* public static $browsers = array(
         array(
             'browserName' => 'firefox',
             'host' => SAUCE_HOST,
@@ -17,8 +17,12 @@ class WebTest extends PHPUnit_Extensions_Selenium2TestCase {
                 'platform'=> 'Windows 10'
             )
         )
-    );
+    );*/
 
+	public static $browsers = RemoteWebDriver::create(
+    "https://pubinator:580f062b-af5a-4982-85dc-4619f66a2987@ondemand.saucelabs.com:443/wd/hub",
+    array("platform"=>"Windows 7", "browserName"=>"chrome", "version"=>"50")
+  );
 
     protected function setUp()
     {
