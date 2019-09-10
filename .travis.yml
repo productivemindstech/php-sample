@@ -2,8 +2,7 @@ language: php
 php: 7.2
 before_script:
   - composer install
-  
-script: python -m SimpleHTTPServer 8080 > /dev/null 2>&1 &
+  - ./before_script.sh
 	
 addons:
   sauce_connect:
