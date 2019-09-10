@@ -1,7 +1,7 @@
 <?php
 
 require_once 'vendor/autoload.php';
-define('SAUCE_HOST','sendemail2surya:5f12446c-8011-412a-9785-59ea40fbb35b@ondemand.saucelabs.com');
+define('SAUCE_HOST','pubinator:580f062b-af5a-4982-85dc-4619f66a2987@ondemand.saucelabs.com');
 
 class WebTest extends PHPUnit_Extensions_Selenium2TestCase {
 	
