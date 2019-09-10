@@ -3,9 +3,7 @@ php: 7.2
 before_script:
   - composer install
   
-script:
-  cd tests
-  python -m SimpleHTTPServer 8080 > /dev/null 2>&1 &
+script: python -m SimpleHTTPServer 8080 > /dev/null 2>&1 &
 	
 addons:
   sauce_connect:
