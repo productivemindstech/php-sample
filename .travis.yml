@@ -4,6 +4,6 @@ before_script:
   - bash before_script.sh
   - composer install
 addons:
-  sauce_connect:
+  sauce_connect: true
     username: "pubinator"
     access_key: "580f062b-af5a-4982-85dc-4619f66a2987"
