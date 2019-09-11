@@ -4,4 +4,3 @@ dist: trusty
 before_script:
   - composer install
   - bash before_script.sh
-  - vendor/bin/sauce_config pubinator 580f062b-af5a-4982-85dc-4619f66a2987
