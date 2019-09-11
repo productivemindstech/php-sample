@@ -1,2 +1,2 @@
 cd tests
-python -m SimpleHTTPServer 8080 > /dev/null 2>&1 &
+python -m SimpleHTTPServer 3000 > /dev/null 2>&1 &
