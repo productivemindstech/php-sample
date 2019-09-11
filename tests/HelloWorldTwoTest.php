@@ -16,7 +16,7 @@ class WebTest extends PHPUnit_Extensions_Selenium2TestCase {
     );
     protected function setUp()
     {
-        $this->setBrowserUrl('http://localhost/');
+        $this->setBrowserUrl('http://localhost:3000/');
     }
     public function testTitle()
     {
