@@ -15,6 +15,7 @@
   /*
     Test actions here...
   */
+  echo $web_driver->title();
  
   $web_driver->quit();
 ?>
