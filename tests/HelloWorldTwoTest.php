@@ -5,6 +5,7 @@ class WebTest extends PHPUnit_Extensions_Selenium2TestCase {
 	
    public static $browsers = array(
         array(
+			'name' => 'Sample Selenium2TestCase',
             'browserName' => 'firefox',
             'host' => SAUCE_HOST,
             'port' => 80,
